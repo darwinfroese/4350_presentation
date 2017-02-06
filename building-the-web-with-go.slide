@@ -1,0 +1,95 @@
+Building the Web with Go
+"I wanna go fast" - Ricky Bobby
+6 Feb 2017
+
+Darwin Froese
+
+* Outline
+
+Why you should use go when building for the web.
+
+* Major benefits
+
+- It's truly concurrent
+- Go code is simple to write
+- Go was built for the web
+- MIPS Support
+
+* Go is truly concurrent
+
+* 
+
+Go wants your applications to be fast and concurrent. Providing built in utilities
+to make your applications multi-threaded.
+
+Spawning a new thread? Easy!
+
+.code mthread.go
+
+* 
+
+Communicating between threads? Easy!
+
+.play chanthread.go
+
+* Go was built for the web
+
+Go was built for the web first. This has a few advantages like:
+
+- Easy to deploy webservers
+- Cookie jars for clients
+- Struct to Json to Struct conversions
+
+* 
+
+Build an entire web server by hand? Easy!
+
+.play webserv.go
+
+* 
+
+Converting legacy json to more understandable json? Easy!
+
+.play json-convert.go
+
+* 
+
+Use CookieJars to fake a client! Make automated testing of your servers easier.
+
+.code cookie-jar.go
+
+
+* Major Disadvantages
+
+Time for the fun part!
+
+* 
+
+- There's only one way of getting things done: The Go Way
+- Go was built for the web
+- You really just don't want to
+
+* The Go Way
+
+* 
+
+- Development has to be done in $GOPATH/src
+- Applications are installed to $GOPATH/bin
+- Your folders are your packages.
+- There's many "conventions" are enforced by the formatters, linters, and other tools
+
+
+* Go was built for the web
+
+* 
+
+"Jack of all trades master of none" -- Go is the opposite.
+
+Go is really good for anything web related: 
+
+- Backends
+- Command-Line Web clients
+
+But it's not that great at many other things
+
+- User Interface, Graphics libraries support through, primarily, community developed wrappers aronud C code
