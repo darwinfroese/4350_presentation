@@ -1,5 +1,4 @@
 Building the Web with Go
-"I wanna go fast" - Ricky Bobby
 6 Feb 2017
 
 Darwin Froese
@@ -17,16 +16,12 @@ Why you should use go when building for the web.
 
 * Go is truly concurrent
 
-* 
-
 Go wants your applications to be fast and concurrent. Providing built in utilities
 to make your applications multi-threaded.
 
 Spawning a new thread? Easy!
 
 .code mthread.go
-
-* 
 
 Communicating between threads? Easy!
 
@@ -40,56 +35,29 @@ Go was built for the web first. This has a few advantages like:
 - Cookie jars for clients
 - Struct to Json to Struct conversions
 
-* 
-
 Build an entire web server by hand? Easy!
 
 .play webserv.go
-
-* 
 
 Converting legacy json to more understandable json? Easy!
 
 .play json-convert.go
 
-* 
-
 Use CookieJars to fake a client! Make automated testing of your servers easier.
 
 .code cookie-jar.go
 
+We can even template our HTML files:
 
-* Major Disadvantages
+.play templating.go
 
-Time for the fun part!
+* MIPS Support
 
-* 
+Go is compiled down into machine code with support for many architectures (MIPS in 1.8)
 
-- There's only one way of getting things done: The Go Way
-- Go was built for the web
-- You really just don't want to
+This makes go one of the faster languages for web serving, comparable to C.
 
-* The Go Way
-
-* 
-
-- Development has to be done in $GOPATH/src
-- Applications are installed to $GOPATH/bin
-- Your folders are your packages.
-- There's many "conventions" are enforced by the formatters, linters, and other tools
-
-
-* Go was built for the web
-
-* 
-
-"Jack of all trades master of none" -- Go is the opposite.
-
-Go is really good for anything web related: 
-
-- Backends
-- Command-Line Web clients
-
-But it's not that great at many other things
-
-- User Interface, Graphics libraries support through, primarily, community developed wrappers aronud C code
+.link https://benchmarksgame.alioth.debian.org/u64q/compare.php?lang=go&lang2=gcc Go vs C
+.link https://benchmarksgame.alioth.debian.org/u64q/compare.php?lang=go&lang2=gpp Go vs C++
+.link https://benchmarksgame.alioth.debian.org/u64q/compare.php?lang=go&lang2=node Go vs Javascript
+.link https://benchmarksgame.alioth.debian.org/u64q/compare.php?lang=go&lang2=python3 Go vs Python
