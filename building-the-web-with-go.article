@@ -16,7 +16,7 @@ Why you should use go when building for the web.
 
 * Go is truly concurrent
 
-Go wants your applications to be fast and concurrent. Providing built in utilities
+Go wants your applications to be fast and concurrent by providing built in utilities
 to make your applications multi-threaded.
 
 Spawning a new thread? Easy!
@@ -29,7 +29,7 @@ Communicating between threads? Easy!
 
 * Go was built for the web
 
-Go was built for the web first. This has a few advantages like:
+Go was designed with the web in mind providing a few advantages like:
 
 - Easy to deploy webservers
 - Cookie jars for clients
