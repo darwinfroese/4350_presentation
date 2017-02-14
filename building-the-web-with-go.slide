@@ -8,6 +8,9 @@ Darwin Froese
 
 Why you should use go when building for the web.
 
+.link github.com/darwinfroese/4350_presentation
+.link go-talks.appspot.com/github.com/darwinfroese/4350_presentation/building-the-web-with-go.slide
+
 * Major benefits
 
 - It's truly concurrent
